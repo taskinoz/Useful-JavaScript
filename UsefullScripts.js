@@ -69,3 +69,12 @@ window.addEventListener("deviceorientation", function(event) {
 //Gets the device tilt and rotation for mobile devices (use with document ready)
 
 //**************************************************************
+
+//Do something on page scroll
+$(document).scroll(function(){
+    //Code here
+});
+//Description:
+//Allows you to run code on a page scroll (usefull for scroll-jacking)
+
+//**************************************************************
