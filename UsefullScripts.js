@@ -25,8 +25,11 @@ window.onscroll = function (e) {
 //Anchor Tag Automatic Scrolling
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
+    //Checks if the anchor link matches the site url
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      //Returns the anchor in the href
       var target = $(this.hash);
+      //Checks if the # is greater than 0 then removes the #
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
@@ -36,6 +39,10 @@ $(function() {
       }
     }
   });
+});
+//Minified version
+$('a[href*="#"]:not([href="#"])').click(function() {
+  $('html,body').animate({scrollTop: ($("[name="+((this.hash).slice(1))+"]")).offset().top},1000);return false;
 });
 //Description: When clicking on a #Anchor
 //tag it will automatically scroll down to the anchor
