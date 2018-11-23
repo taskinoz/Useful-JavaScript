@@ -17,6 +17,10 @@ window.onscroll = function (e) {
     //Get Yaxis scroll and move the background with Yaxis variable
     $("body").css("background-position","center "+((window.scrollY/1.4))+"px");
 };
+
+//Native JS
+window.onscroll = function (e) {document.getElementById('ID').style.backgroundPosition="center "+window.scrollY/4+"px"};
+
 //Description: This function gets the scroll position so you
 //can change CSS transforms or background positions
 
