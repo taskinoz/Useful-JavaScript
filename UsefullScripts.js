@@ -20,7 +20,7 @@ window.onscroll = function (e) {
 
 //Native JS
 window.onscroll = function (e) {
-    document.getElementById('ID').style.backgroundPosition="center "+window.scrollY/4+"px"
+    document.getElementById('ID').style.backgroundPosition="center "+(window.scrollY/1.4)+"px"
 };
 
 //Description: This function gets the scroll position so you
