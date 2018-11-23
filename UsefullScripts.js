@@ -19,7 +19,9 @@ window.onscroll = function (e) {
 };
 
 //Native JS
-window.onscroll = function (e) {document.getElementById('ID').style.backgroundPosition="center "+window.scrollY/4+"px"};
+window.onscroll = function (e) {
+    document.getElementById('ID').style.backgroundPosition="center "+window.scrollY/4+"px"
+};
 
 //Description: This function gets the scroll position so you
 //can change CSS transforms or background positions
